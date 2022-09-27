@@ -11,7 +11,59 @@
 
 <body>
 <div style="text-align: center;"><img class="fit-picture" src="/pic/trisashi_logo_title_only.png" alt="team logo" width="550">
+ <div id="app">
+    <v-app>
+      <v-main>
+        <v-container>
+          <div>
+            <template>
+              <v-container fluid>
+                <v-row align="center">
+                  <v-col class="d-flex" cols="12" sm="10">
+                    <v-select :items="city" label="場所を選択してください"></v-select>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </template>
+            <template>
+              <v-container fluid>
+                <v-row align="center">
+                  <v-col class="d-flex" cols="12" sm="10">
+                    <v-select :items="town" label="鹿児島県を選択した場合のみ選択してください"></v-select>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </template>
+            <template>
+              <v-container fluid>
+                <v-row align="center">
+                  <v-col cols="12" sm="10">
+                    <v-select v-model="value" :items="items" attach chips label="試験形式を選択してください" multiple></v-select>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </template>
+            <template>
+              <v-row align="center" justify="space-around">
+                <v-btn>
+                  <a href="favorite.html">お気に入り</a>
+                </v-btn>
+              </v-row>
+            </template>
+            <br>
+            <v-row align="center" justify="space-around">
+              <v-btn depressed color="success">
+                <a href="result.html">検索</a>
+              </v-btn>
+            </v-row>
+            </br>
+          </div>
+        </v-container>
+      </v-main>
+    </v-app>
   </div>
+
+</div>
   <div id="app">
     <v-app>
       <v-main>

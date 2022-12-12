@@ -5,7 +5,7 @@ html, body {
 
 /*メニューバー*/
 .header {
-  background-color: white;
+  background-color: #ff8f8f;
   width: 100%;
   height: 350px;
   top: 0;
@@ -35,7 +35,7 @@ a {
   display:inlineblock;
   text-decoration: none;
   color: white;
-  margin-right: 30px;
+  margin-right: 35px;
   margin-left:15px;
 }
 a:hover {
